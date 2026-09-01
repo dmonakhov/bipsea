@@ -31,7 +31,10 @@ class AgeApp:
                 str,
                 default="classic",
                 choices=list(HRPS),
-                help="Identity flavor: classic (X25519) or pq (X-Wing, age v1.3.0+)",
+                help=(
+                    "Identity flavor: classic (X25519) or pq (X-Wing, age v1.3.0+)."
+                    " Use a given index with only one flavor."
+                ),
             ),
         ]
 

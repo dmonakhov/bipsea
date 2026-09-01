@@ -210,7 +210,7 @@ def xprv(mnemonic, passphrase, mainnet):
     "-f",
     "--flavor",
     type=click.Choice(list(AGE_HRPS)),
-    help="Identity flavor for `--application age`.",
+    help="Identity flavor for `--application age`. Use a given index with only one flavor.",
 )
 def derive_cli(application, number, index, special, xprv, to, flavor):
     if xprv:

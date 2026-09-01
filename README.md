@@ -195,6 +195,10 @@ as an [age](https://age-encryption.org) identity, per the BIP-85 example use.
 `-f pq` derives the post-quantum (X-Wing) flavor supported by age v1.3.0+.
 Print the matching recipient with `age-keygen -y`.
 
+Use a given index with only one flavor: a future quantum computer could recover
+the seed from a published classic recipient and thereby also compromise the pq
+identity derived from the same seed.
+
 
 ### mnemonic phrases
 
